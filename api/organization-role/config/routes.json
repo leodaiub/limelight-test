@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/organization-roles",
+      "handler": "organization-role.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/organization-roles/count",
+      "handler": "organization-role.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/organization-roles/:id",
+      "handler": "organization-role.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/organization-roles",
+      "handler": "organization-role.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/organization-roles/:id",
+      "handler": "organization-role.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/organization-roles/:id",
+      "handler": "organization-role.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

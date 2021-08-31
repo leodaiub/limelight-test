@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organization_roles",
+  "info": {
+    "name": "Organization_role",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "organization": {
+      "via": "organization_roles",
+      "model": "organization"
+    },
+    "users_permissions_users": {
+      "via": "organization_role",
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}
